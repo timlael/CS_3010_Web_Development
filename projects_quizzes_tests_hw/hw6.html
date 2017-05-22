@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>tmlz5d HW6</title>
+<script type="text/javascript" src="hw6.js"></script>
+</head>
+
+<body onLoad="document.calculate.a.focus()">
+<form name="calculate">
+<label>Current Age:
+<input name="a" type="text" id="a" title="age" onkeyup="calc()"><span id="aerror" style="color:#ff0000"></span>
+</label><br>
+<label>Contribution Amount: $
+<input name="c" type="text" id="c" title="cont" onkeyup="calc()"><span id="cerror" style="color:#ff0000"></span>
+</label><br>
+<label>Intrest Rate: 
+<input name="i" type="text" id="i" title="int" onkeyup="calc()"><span id="ierror" style="color:#ff0000"></span>
+%</label><br>
+</form>
+<label>Contribution Frequency:</label>
+<form>
+<select onchange="calc()" id="f">
+<option id="f"  value="mo" >Monthly</option>
+<option id="f"  value="an" >Annualy</option>
+</select>
+</form>
+<span id="result"></span>
+</body>
+</html>

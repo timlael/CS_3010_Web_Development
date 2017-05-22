@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Midterm Exam</title>
+<link rel="stylesheet" type="text/css" href="exam.css">
+<script type="text/javascript" src="exam.js"></script>
+</head>
+<body onLoad="document.calculate.num1.focus();">
+<form action="exam.php" name="calculate" id="calculate">
+<label> Number 1 </label>
+<input name="num1" type="text" id="num1" title="num1" onblur="validateNum1()"><span id="error"></span>
+<br>
+<label> + Number 2 </label>
+<input name="num2" type="text" id="num2" title="num2" onblur="validateNum2()"><span id="error"></span>
+<br>
+<input id="submit" name="submit" type="submit" value="Submit" disabled>
+</form>
+<br>
+</body>
+</html>

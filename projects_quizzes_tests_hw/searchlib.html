@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Search Music Library</title>
+</head>
+<body>
+<center><h1>Enter search criteria below:</h1></center>
+<center>
+<form id="cd" name="cd" action="searchlib.php" method="GET">
+  Artist: <input type="text" id="artist" name="artist" ></input><br />
+  Title: <input type="text" id="title" name="title" ></input><br />
+  Year: <input type="text" id="year" name="year" maxlength="4" size="4"></input><br />
+  <br />
+  <input type="submit" name="submit" id="submit" value="Search"></input>
+  <input type="reset" name="reset" id="reset" value="Reset"></input>
+</form>
+<table>
+<form action="libindex.php">
+  <input type="submit" name="submit" id="submit" value="Return To Index"></input>
+</form>
+</table>
+</center>
+</body>
+</html>
